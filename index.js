@@ -59,4 +59,6 @@ app.delete("/removeData", (req, res) => {
     });
 })
 
-app.listen(port);
+app.listen(port, () => {
+    console.log('OK', port);
+});
